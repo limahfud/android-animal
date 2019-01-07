@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".AddActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:text="Name" />
+
+    <EditText
+        android:id="@+id/etAnimalName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name of Your Animal" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:text="Genus" />
+
+    <EditText
+        android:id="@+id/etAnimalGenus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Genus of Your Animal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:text="Species" />
+
+    <EditText
+        android:id="@+id/etAnimalSpecies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Species of Your Animal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:text="On Water" />
+
+    <EditText
+        android:id="@+id/etAnimalOnWater"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Is Your Animal life in Water?" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:text="Lifespan" />
+
+    <EditText
+        android:inputType="number"
+        android:id="@+id/etAnimalLifespan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Lifespan of Your Animal" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SAVE"/>
+
+</LinearLayout>
