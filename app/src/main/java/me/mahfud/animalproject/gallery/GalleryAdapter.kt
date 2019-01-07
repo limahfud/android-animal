@@ -5,7 +5,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import me.mahfud.animalproject.R
 
-class GalleryAdapter(val paths: List<String>) : RecyclerView.Adapter<GalleryHolder>() {
+class GalleryAdapter(val paths: List<String>, val listener: OnGalleryClicked) : RecyclerView.Adapter<GalleryHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GalleryHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.layout_item_image_single, parent, false)
 
@@ -16,5 +16,12 @@ class GalleryAdapter(val paths: List<String>) : RecyclerView.Adapter<GalleryHold
 
     override fun onBindViewHolder(galleryHolder: GalleryHolder, position: Int) {
         galleryHolder.bind(paths[position])
+        galleryHolder.itemView.setOnClickListener {
+            listener.onClicked(position)
+        }
+    }
+
+    interface OnGalleryClicked {
+        fun onClicked(position: Int)
     }
 }

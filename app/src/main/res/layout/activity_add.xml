@@ -52,12 +52,10 @@
         android:textColor="@color/colorPrimary"
         android:text="On Water" />
 
-    <EditText
-        android:id="@+id/etAnimalOnWater"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="number"
-        android:hint="Is Your Animal life in Water?" />
+    <Switch
+        android:id="@+id/switchOnWater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
     <TextView
         android:layout_width="match_parent"

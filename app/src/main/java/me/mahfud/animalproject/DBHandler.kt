@@ -6,7 +6,9 @@ import android.database.sqlite.SQLiteOpenHelper
 import com.idescout.sql.SqlScoutServer
 
 class DBHandler(context: Context,
-                factory: SQLiteDatabase.CursorFactory?) : SQLiteOpenHelper(context, DATABASE_NAME, factory, DATABASE_VERSION) {
+                factory: SQLiteDatabase.CursorFactory?) :
+
+        SQLiteOpenHelper(context, DATABASE_NAME, factory, DATABASE_VERSION) {
 
     companion object {
 

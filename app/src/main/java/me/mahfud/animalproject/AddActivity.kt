@@ -17,7 +17,7 @@ class AddActivity : AppCompatActivity() {
                     genus = etAnimalGenus.text.toString(),
                     species = etAnimalSpecies.text.toString(),
                     lifespan = etAnimalLifespan.text.toString().toInt(),
-                    isOnWater = etAnimalOnWater.text.toString().toInt() > 0
+                    isOnWater = switchOnWater.isChecked
             )
 
             saveAnimal(animal)
@@ -29,8 +29,8 @@ class AddActivity : AppCompatActivity() {
         val dbHandler = DBHandler(this, null)
 
         val db = dbHandler.writableDatabase
-
         val newAnimalValue = ContentValues()
+
         newAnimalValue.put(DBHandler.COLUMN_ANIMAL_NAME, animal.name)
         newAnimalValue.put(DBHandler.COLUMN_ANIMAL_GENUS, animal.genus)
         newAnimalValue.put(DBHandler.COLUMN_ANIMAL_SPECIES, animal.species)

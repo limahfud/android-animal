@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import com.idescout.sql.SqlScoutServer
 import kotlinx.android.synthetic.main.activity_main.*
+import me.mahfud.animalproject.gallery.GalleryActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -15,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         SqlScoutServer.create(this, packageName);
 
         btnShowAll.setOnClickListener {
-
+            startActivity(Intent(this, GalleryActivity::class.java))
         }
 
 
